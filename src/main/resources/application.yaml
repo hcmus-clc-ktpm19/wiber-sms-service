@@ -1,0 +1,21 @@
+spring:
+  config:
+    import: secret.yaml
+
+server:
+  port: '8081'
+
+logging:
+  file:
+    name: './sms-service/src/main/resources/log/wiber-sms-service.log'
+  level:
+    org:
+      springframework:
+      amqp:
+      rabbit: DEBUG
+    com:
+      twilio: DEBUG
+
+queue:
+  sms:
+    name: 'sms-queue'
