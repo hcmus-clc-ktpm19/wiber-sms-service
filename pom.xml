@@ -88,4 +88,12 @@
     </plugins>
   </build>
 
+  <distributionManagement>
+    <repository>
+      <id>wiber.sms.repo</id>
+      <name>wiber-sms-service</name>
+      <url>file:///home/kygor/deploy/wiber-sms</url>
+    </repository>
+  </distributionManagement>
+
 </project>
